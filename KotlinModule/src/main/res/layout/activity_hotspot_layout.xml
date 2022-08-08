@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Open Data"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn_hotspot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:text="Open Hotspot"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn_page_one_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:text="Exit"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

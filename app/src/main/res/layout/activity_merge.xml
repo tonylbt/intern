@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_merge_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/btn_test_01"
+        style="@style/CustomButtonStyle"
+        android:text="button 1" />
+
+    <Button
+        android:id="@+id/btn_test_02"
+        style="@style/CustomButtonStyle"
+        android:text="button 2" />
+
+    <Button
+        android:id="@+id/btn_test_03"
+        style="@style/CustomButtonStyle"
+        android:text="button 3" />
+
+    <include layout="@layout/layout_test1" />
+
+    <include layout="@layout/layout_test2" />
+
+    <ViewStub
+        android:id="@+id/vs_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/layout_test3" />
+
+    <ViewStub
+        android:id="@+id/vs_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/layout_test4" />
+
+</LinearLayout>

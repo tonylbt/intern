@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_item_desc_color">#959595</color>
+    <color name="discover_background_color">#1668d0</color>
+    <color name="common_E4E4E4">#E4E4E4</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#FFFAFAFA</color>
+    <color name="dark">#867f7f</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

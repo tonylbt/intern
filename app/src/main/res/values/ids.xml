@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type='id' name="list_item_icon_id"></item>
+    <item type='id' name="list_item_desc_id"></item>
+    <item type='id' name="list_item_arrow_id"></item>
+
+    <item type='id' name="list_item_id_tv1"></item>
+    <item type='id' name="list_item_id_tv2"></item>
+    <item type='id' name="list_item_id_tv3"></item>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201F2D">
+    <RelativeLayout
+        android:id="@+id/sign_titleR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sgin In"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/sign_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3A3A52"
+        android:layout_alignBottom="@+id/sign_titleR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+    android:id="@+id/sign_nameR"
+    android:layout_below="@+id/sign_titleView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/sgin_name_edit"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="user name"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/sign_nameView"
+        android:layout_below="@+id/sign_nameR"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3A3A52"
+        android:layout_marginLeft="20dp" />
+    <LinearLayout
+        android:id="@+id/passwordR"
+        android:layout_below="@+id/sign_nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"/>
+        <EditText
+            android:id="@+id/passwordNew"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/passView"
+        android:layout_below="@+id/passwordR"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3A3A52"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:id="@+id/morepasswordR"
+        android:layout_below="@+id/passView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="RePassword"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"/>
+        <EditText
+            android:id="@+id/RePassword"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="RePassword"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@null"
+            android:inputType="textPassword"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/morepasswordR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/sign_in" />
+
+
+</RelativeLayout>

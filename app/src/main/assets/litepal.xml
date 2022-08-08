@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="User" />
+    <version value="2" />
+    <list>
+        <mapping class="com.libt.intern.samples.cake.bean.PeopleInfo" />
+    </list>
+    <list>
+        <mapping class="com.libt.intern.samples.recycler.bean.People"></mapping>
+    </list>
+</litepal>

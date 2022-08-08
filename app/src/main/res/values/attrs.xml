@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomListItem">
+        <attr name="ItemLocation">
+            <enum name="top" value="0"></enum>
+            <enum name="middle" value="1"></enum>
+            <enum name="bottom" value="2"></enum>
+            <enum name="single" value="3"></enum>
+        </attr>
+        <attr name="ItemIcon" format="integer"></attr>
+        <attr name="ItemShowIcon" format="boolean"></attr>
+        <attr name="ItemText" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

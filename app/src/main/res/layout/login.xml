@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView3"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:hint="Name"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/unfold"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/unfold"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/v1"
+        android:layout_below="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black_overlay"/>
+
+    <EditText
+        android:layout_below="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Password"
+        android:background="@null"/>
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black_overlay"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/v2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Login" />
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_below="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forget the password?"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/newclient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="sign in?"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/writtenconsent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录即代表阅读并同意服务条款"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+    <CheckBox
+        android:text="remember the password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_alignLeft="@+id/r1"
+        android:layout_alignStart="@+id/r1"
+        android:layout_marginTop="27dp"
+        android:id="@+id/remember_the_password" />
+
+    <CheckBox
+        android:text="automatic login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remember_the_password"
+        android:layout_alignLeft="@+id/remember_the_password"
+        android:layout_alignStart="@+id/remember_the_password"
+        android:layout_marginTop="14dp"
+        android:id="@+id/automatic_login"
+        android:visibility="gone"/>
+</RelativeLayout>
+
